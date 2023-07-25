@@ -1,4 +1,8 @@
-import { render } from "react-dom";
+import { createRoot } from 'react-dom/client';
 import { App } from "./App";
 
-render(<App />, document.querySelector('#root'))
+
+const domNode = document.getElementById('root') as HTMLDivElement;
+const root = createRoot(domNode);
+
+root.render(<App />)
