@@ -1,11 +1,7 @@
 import './style.css'
-import IMAGE from './react-logo.jpeg'
-import { Counter } from './Counter'
 
 export const App = () => (
   <div>
-    <h1>Edit: React Typescript Webpack Starter Template {process.env.name}</h1>
-    <img src={IMAGE} alt="React logo" width="400" height="300" />
-    <Counter />
+    <h1>React + TS</h1>
   </div>
 )
