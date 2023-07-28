@@ -1,16 +1,16 @@
 import { useReducer } from 'react'
 
 type CounterState = {
-  count: number
+  readonly count: number
 }
 
 type UpdateAction = {
-  type: 'increment' | 'decrement'
-  payload: number
+  readonly type: 'increment' | 'decrement'
+  readonly payload: number
 }
 
 type ResetAction = {
-  type: 'reset'
+  readonly type: 'reset'
 }
 
 type CounterAction = UpdateAction | ResetAction

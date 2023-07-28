@@ -1,10 +1,10 @@
 import { MouseEventHandler, ReactNode } from 'react'
 
 interface ButtonProps {
-  type?: 'submit' | 'reset' | 'button'
-  children: ReactNode
-  isDisabled?: boolean
-  onClick: MouseEventHandler
+  readonly type?: 'submit' | 'reset' | 'button'
+  readonly children: ReactNode
+  readonly isDisabled?: boolean
+  readonly onClick: MouseEventHandler
 }
 
 export const Button = ({

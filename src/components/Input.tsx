@@ -3,12 +3,12 @@
 import { ChangeEventHandler } from 'react'
 
 interface InputProps {
-  type?: 'text' | 'checkbox' | 'radio'
-  label: string
-  name: string
-  id: string
-  isDisabled?: boolean
-  onChange: ChangeEventHandler
+  readonly type?: 'text' | 'checkbox' | 'radio'
+  readonly label: string
+  readonly name: string
+  readonly id: string
+  readonly isDisabled?: boolean
+  readonly onChange: ChangeEventHandler
 }
 
 export const Input = ({

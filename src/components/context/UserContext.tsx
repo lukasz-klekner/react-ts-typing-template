@@ -1,17 +1,17 @@
 import React, { useState, createContext, useContext } from 'react'
 
 interface AuthUser {
-  name: string
-  email: string
+  readonly name: string
+  readonly email: string
 }
 
 interface UserContext {
-  user: AuthUser | null
-  setUser: React.Dispatch<React.SetStateAction<AuthUser | null>>
+  readonly user: AuthUser | null
+  readonly setUser: React.Dispatch<React.SetStateAction<AuthUser | null>>
 }
 
 interface UserContextProviderProps {
-  children: React.ReactNode
+  readonly children: React.ReactNode
 }
 
 const UserContext = createContext<UserContext | null>(null)
