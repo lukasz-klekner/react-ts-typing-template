@@ -1,7 +1,9 @@
 import { ChangeEventHandler, MouseEventHandler } from 'react'
 import { Button } from './components/Button'
+import { UserContextProvider } from './components/context/UserContext'
 import { CounterReducer } from './components/hooks/CounterReducer'
 import { Input } from './components/Input'
+import { User } from './components/User'
 import './style.css'
 
 export const App = () => {
@@ -13,16 +15,20 @@ export const App = () => {
     console.log(event?.target.value)
   }
   return (
-    <div>
-      <h1>React + TS</h1>
+    <UserContextProvider>
+      <div>
+        <h1>React + TS</h1>
 
-      <CounterReducer />
+        <User />
 
-      <Button onClick={handleClick}>
-        <p>Click me!</p>
-      </Button>
+        <CounterReducer />
 
-      <Input name="name" id="name" label="Name" onChange={handleChange} />
-    </div>
+        <Button onClick={handleClick}>
+          <p>Click me!</p>
+        </Button>
+
+        <Input name="name" id="name" label="Name" onChange={handleChange} />
+      </div>
+    </UserContextProvider>
   )
 }
