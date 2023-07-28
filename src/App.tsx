@@ -2,6 +2,7 @@ import { ChangeEventHandler, MouseEventHandler } from 'react'
 import { Button } from './components/Button'
 import { UserContextProvider } from './components/context/UserContext'
 import { CounterReducer } from './components/hooks/CounterReducer'
+import { InputRef } from './components/hooks/InputRef'
 import { Input } from './components/Input'
 import { User } from './components/User'
 import './style.css'
@@ -28,6 +29,7 @@ export const App = () => {
         </Button>
 
         <Input name="name" id="name" label="Name" onChange={handleChange} />
+        <InputRef />
       </div>
     </UserContextProvider>
   )
