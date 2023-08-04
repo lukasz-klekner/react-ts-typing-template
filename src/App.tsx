@@ -8,6 +8,7 @@ import { InputRef } from './components/hooks/InputRef'
 import { Input } from './components/Input'
 import { List } from './components/List'
 import { RandomNumber } from './components/RandomNumber'
+import { Toast } from './components/Toast'
 import { User } from './components/User'
 import './style.css'
 
@@ -39,6 +40,10 @@ export const App = () => {
 
         <RandomNumber value={5} isPositive />
         <RandomNumber value={-5} isNegative />
+
+        <Toast position="center" />
+
+        <Toast position="left-center" />
 
         <User />
 
