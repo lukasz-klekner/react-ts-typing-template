@@ -1,6 +1,7 @@
 import { ChangeEventHandler, MouseEventHandler } from 'react'
 import { Button } from './components/Button'
 import { UserContextProvider } from './components/context/UserContext'
+import { CustomButton } from './components/CustomButton'
 import { DisplayGreetingComponent } from './components/DisplayGreeting'
 import { Greeting } from './components/Greeting'
 import { CounterReducer } from './components/hooks/CounterReducer'
@@ -40,6 +41,10 @@ export const App = () => {
 
         <RandomNumber value={5} isPositive />
         <RandomNumber value={-5} isNegative />
+
+        <CustomButton variant="primary" onClick={() => console.log('clicked')}>
+          Primary button
+        </CustomButton>
 
         <Toast position="center" />
 
