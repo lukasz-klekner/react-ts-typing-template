@@ -6,8 +6,20 @@ import { Greeting } from './components/Greeting'
 import { CounterReducer } from './components/hooks/CounterReducer'
 import { InputRef } from './components/hooks/InputRef'
 import { Input } from './components/Input'
+import { List } from './components/List'
 import { User } from './components/User'
 import './style.css'
+
+const ITEMS = [
+  {
+    id: 1,
+    name: 'Luki',
+  },
+  {
+    id: 2,
+    name: 'Greg',
+  },
+]
 
 export const App = () => {
   const handleClick: MouseEventHandler<HTMLButtonElement> = (event) => {
@@ -25,6 +37,8 @@ export const App = () => {
         <DisplayGreetingComponent component={Greeting} />
 
         <User />
+
+        <List items={ITEMS} onClick={(item) => console.log(item)} />
 
         <CounterReducer />
 
