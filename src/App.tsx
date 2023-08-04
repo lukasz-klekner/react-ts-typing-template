@@ -7,6 +7,7 @@ import { CounterReducer } from './components/hooks/CounterReducer'
 import { InputRef } from './components/hooks/InputRef'
 import { Input } from './components/Input'
 import { List } from './components/List'
+import { RandomNumber } from './components/RandomNumber'
 import { User } from './components/User'
 import './style.css'
 
@@ -35,6 +36,9 @@ export const App = () => {
         <h1>React + TS</h1>
 
         <DisplayGreetingComponent component={Greeting} />
+
+        <RandomNumber value={5} isPositive />
+        <RandomNumber value={-5} isNegative />
 
         <User />
 
