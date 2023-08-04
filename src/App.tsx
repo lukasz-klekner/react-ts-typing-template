@@ -1,6 +1,8 @@
 import { ChangeEventHandler, MouseEventHandler } from 'react'
 import { Button } from './components/Button'
 import { UserContextProvider } from './components/context/UserContext'
+import { DisplayGreetingComponent } from './components/DisplayGreeting'
+import { Greeting } from './components/Greeting'
 import { CounterReducer } from './components/hooks/CounterReducer'
 import { InputRef } from './components/hooks/InputRef'
 import { Input } from './components/Input'
@@ -19,6 +21,8 @@ export const App = () => {
     <UserContextProvider>
       <div>
         <h1>React + TS</h1>
+
+        <DisplayGreetingComponent component={Greeting} />
 
         <User />
 
