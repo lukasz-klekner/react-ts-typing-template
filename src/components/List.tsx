@@ -1,6 +1,6 @@
 interface ListProps<T> {
-  items: T[]
-  onClick: (value: T) => void
+  readonly items: T[]
+  readonly onClick: (value: T) => void
 }
 
 export const List = <T extends { id: number; name: string }>({

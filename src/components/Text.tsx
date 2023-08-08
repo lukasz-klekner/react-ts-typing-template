@@ -1,10 +1,10 @@
 import { ComponentProps, ElementType, ReactNode } from 'react'
 
 interface TextOwnProps<T extends ElementType> {
-  size?: 'sm' | 'md' | 'lg'
-  color?: 'primary' | 'secondary'
-  children: ReactNode
-  as?: T
+  readonly size?: 'sm' | 'md' | 'lg'
+  readonly color?: 'primary' | 'secondary'
+  readonly children: ReactNode
+  readonly as?: T
 }
 
 type TextProps<T extends ElementType> = TextOwnProps<T> &

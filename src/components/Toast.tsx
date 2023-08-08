@@ -2,7 +2,7 @@ type HorizontalPosition = 'left' | 'center' | 'right'
 type VerticalPosition = 'top' | 'center' | 'bottom'
 
 interface ToastProps {
-  position:
+  readonly position:
     | Exclude<`${HorizontalPosition}-${VerticalPosition}`, 'center-center'>
     | 'center'
 }
