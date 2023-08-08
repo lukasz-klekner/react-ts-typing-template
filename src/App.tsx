@@ -64,7 +64,9 @@ export const App = () => {
         <Input name="name" id="name" label="Name" onChange={handleChange} />
         <InputRef />
 
-        <Text as="p">new</Text>
+        <Text as="label" htmlFor="Siemka">
+          new
+        </Text>
       </div>
     </UserContextProvider>
   )
