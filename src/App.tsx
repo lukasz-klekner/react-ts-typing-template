@@ -9,6 +9,7 @@ import { InputRef } from './components/hooks/InputRef'
 import { Input } from './components/Input'
 import { List } from './components/List'
 import { RandomNumber } from './components/RandomNumber'
+import { Text } from './components/Text'
 import { Toast } from './components/Toast'
 import { User } from './components/User'
 import './style.css'
@@ -62,6 +63,8 @@ export const App = () => {
 
         <Input name="name" id="name" label="Name" onChange={handleChange} />
         <InputRef />
+
+        <Text as="p">new</Text>
       </div>
     </UserContextProvider>
   )
